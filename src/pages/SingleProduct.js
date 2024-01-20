@@ -8,6 +8,7 @@ import Colors from "../components/Colors";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 import Container from "../components/Container";
+import { Link } from "react-router-dom";
 
 const SingleProduct = () => {
   const props = {
@@ -148,7 +149,9 @@ const SingleProduct = () => {
                     />
                   </div>
                   <div className="d-flex align-items-center gap-30 ms-5">
-                    <button className="button border-0">Add to Cart</button>
+                    <Link to="/cart" className="button border-0 text-white">
+                      Add to Cart
+                    </Link>
                     <button className="button signup">Buy It Now</button>
                   </div>
                 </div>
